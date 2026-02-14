@@ -59,6 +59,38 @@ export function App() {
 
 The package also exports variants (e.g. `buttonVariants`, `badgeVariants`) and the `cn` helper. Styles are precompiled (Tailwind v4), so you don't need to configure Tailwind in the consuming project.
 
+### Use case: Apply button styles to other elements
+
+You can use `buttonVariants` to apply the same button look to any element (e.g. a link) without rendering a `<button>`:
+
+```tsx
+import "morfik-pl/styles.css";
+import { Button, buttonVariants } from "morfik-pl";
+
+export function App() {
+  return (
+    <>
+      <Button
+        variant="outline"
+        size="lg"
+        onClick={() => console.log("Button clicked")}
+      >
+        Click me
+      </Button>
+
+      <a
+        href="/dashboard"
+        className={buttonVariants({ variant: "outline", size: "lg" })}
+      >
+        Go to dashboard
+      </a>
+    </>
+  );
+}
+```
+
+Both the button and the link share the same visual style; use the `<Button>` when you need button semantics and behavior, and `buttonVariants()` when you need a link or another element that should look like a button.
+
 ## Project Structure
 
 ```
