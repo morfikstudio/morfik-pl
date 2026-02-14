@@ -1,5 +1,5 @@
 // Components
-export * from "./components/ui";
+export * from "./components/ui"
 
 // Utilities
-export { cn } from "./lib/utils";
+export { cn } from "./lib/utils"

@@ -1,6 +1,6 @@
-export { Button, buttonVariants, type ButtonProps } from "./button";
-export { Badge, badgeVariants, type BadgeProps } from "./badge";
-export { Input, type InputProps } from "./input";
+export { Button, buttonVariants, type ButtonProps } from "./button"
+export { Badge, badgeVariants, type BadgeProps } from "./badge"
+export { Input, type InputProps } from "./input"
 export {
   Card,
   CardHeader,
@@ -8,4 +8,4 @@ export {
   CardTitle,
   CardDescription,
   CardContent,
-} from "./card";
+} from "./card"
